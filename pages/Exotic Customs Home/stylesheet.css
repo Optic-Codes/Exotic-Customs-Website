@@ -1,0 +1,149 @@
+/* NOTE: animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(10%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes getBigger {
+  from {
+    size: auto;
+  }
+  to {
+    size:10px;
+  }
+}
+
+* {
+  padding: 0%;
+  margin: 0px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navBarBackground {
+  background-color: #970000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navBar {
+  /* NOTE: sizeing and positioning */
+  padding: 0.5px;
+  align-items: center;
+  text-align: center;
+  background-color: #ff0000;
+  border-radius: 30px;
+  font-family: courier;
+}
+
+.title {
+  animation: fadeInUp 0.5s cubic-bezier(0.73, -0.32, 0.35, 2.3) forwards;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.2s;
+}
+
+.navBar a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #861717c9;
+  border-radius: 20px;
+}
+
+.navBar hr {
+  height: 1px;
+  background-color: #000000;
+  border: none;
+}
+
+.spaceBetweenNavBarAndSocials {
+  padding: 20px;
+}
+
+.goal {
+  font-family: courier;
+  text-align: center;
+  align-items: center;
+  background-color: #700000;
+  color: white;
+  width: fill;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.goalText {
+  width: 50%;
+  align-items: center;
+  transform: translateX(50%);
+}
+
+.YouTube {
+  border: 3px solid #000000;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  transform: translateX(50%);
+}
+.YouTube a {
+  align-items: center;
+  position: relative;
+  transform: translateY(0%);
+}
+
+.youtubeLink {
+  transform: translateY(100%);
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+}
+
+/* NOTE: */
